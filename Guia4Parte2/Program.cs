@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -66,6 +67,7 @@ namespace Guia4Parte2
              * Objetivo: El programa debe contar el numero de vocales en un texto ingresado por el usuario
              * y permitirle repetir el proceso con diferentes textos.
             */
+            /*
             string cadena;
             Console.WriteLine("Ingrese texto");
             cadena = Console.ReadLine();
@@ -80,6 +82,7 @@ namespace Guia4Parte2
             }
             while (i < cadena.Length);
             Console.WriteLine($"Cantidad de vocales: {cantVocales}");
+            */
             /*
              * 5. Calculadora basica
              * Objetivo: el programa debe realizar operaciones aritmeticas basicas(suma, resta, multiplicacion y division)
@@ -98,9 +101,47 @@ namespace Guia4Parte2
              * es par o impar y permitirle verificar multiples numeros.
             */
             /*
+            int numero;
+            Console.WriteLine("Ingrese un numero");
+            numero = int.Parse(Console.ReadLine());
+            do 
+            {
+                if (numero % 2 == 0)
+                    {
+                    Console.WriteLine("El numero es par");
+                    }
+                else {
+                    Console.WriteLine("El numero no es par");
+                }
+                Console.WriteLine("Ingrese otro numero (0 para terminar)");
+                numero = int.Parse(Console.ReadLine());
+            }
+            while (numero != 0);
+            */
+            Console.WriteLine();
+            /*
              * 7. Validad edad 
              * Objetivo: El programa debe determinar si el usuario es mayor o menor de edad basado 
              * en la edad ingresada y permitirle realizar multiples verificaciones. 
+            */
+            /*
+            int edad;
+            Console.WriteLine("Ingrese edad");
+            edad = int.Parse(Console.ReadLine());
+            do
+            {
+                if (edad >= 18) 
+                {
+                    Console.WriteLine("Es mayor de edad");
+                }
+                else
+                {
+                    Console.WriteLine("Es menor de edad");
+                };
+                Console.WriteLine("Ingrese edad (0 para terminar)");
+                edad = int.Parse(Console.ReadLine());
+            }
+            while (edad != 0);
             */
             /*
              * 8. Determinar la longitud de una cadena

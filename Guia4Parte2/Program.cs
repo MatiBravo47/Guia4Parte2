@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics.Eventing.Reader;
+using System.Globalization;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -149,9 +151,34 @@ namespace Guia4Parte2
              * y permitirle ingresar multiples textos 
             */
             /*
+            string texto;
+            int longitud ;
+            do 
+            {
+                Console.WriteLine("Ingrese texto(0 para terminar)");
+                texto = Console.ReadLine();
+                longitud = texto.Length;
+                Console.WriteLine("Longitud:" + longitud);
+            }
+            while (texto != "0");
+            */
+            /*
              * 9. Calcular el area de un circulo
              * Objetivo: El programa debe calcular el area de un circulo basandose en el radio ingresado
              * por el usuario y permitirle realizar multiples calculos. 
+            */
+            /*
+            double areaCirculo, radio;
+            Console.WriteLine("Ingrese el radio (0 para finalizar)");
+            radio = double.Parse(Console.ReadLine());
+            do 
+            {
+                areaCirculo = Math.PI * radio * radio;
+                Console.WriteLine("El area es:"+ areaCirculo) ;
+                Console.WriteLine("Ingrese el radio (0 para finalizar)");
+                radio = double.Parse(Console.ReadLine());
+            }
+            while (radio != 0);
             */
             /*
              * 10. Convertir texto a mayusculas 
@@ -159,10 +186,33 @@ namespace Guia4Parte2
              * permitirle conversiones. 
             */
             /*
+            string texto, textoEnMayus;
+            Console.WriteLine("Ingrese un texto");
+            texto = Console.ReadLine();
+            do 
+            {
+                Console.WriteLine("El texto pasado a mayuscula es:");
+                textoEnMayus = texto.ToUpper();
+                Console.WriteLine(textoEnMayus);
+                Console.WriteLine("Ingrese un texto (0 para finalizar)");
+                texto = Console.ReadLine();
+            }
+            while (texto != "0");
+            */
+            /*
              * 11. Encontar el mayor de tres numeros 
              * Objetivo: El programa debe determinar el mayor de tres numeros ingresados por el usuario 
              * y permitirle realizar multiples comparaciones.
-            */ 
+            */
+            double valor1, valor2, valor3;
+            Console.WriteLine("Ingrese valor 1");
+            valor1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese valor 2");
+            valor2 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese valor 3");
+            valor3 = double.Parse(Console.ReadLine());
+            do { }
+            while ();
             Console.ReadLine();
 
 

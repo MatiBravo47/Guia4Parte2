@@ -205,19 +205,34 @@ namespace Guia4Parte2
              * y permitirle realizar multiples comparaciones.
             */
             double valor1, valor2, valor3;
-            Console.WriteLine("Ingrese valor 1");
-            valor1 = double.Parse(Console.ReadLine());
-            Console.WriteLine("Ingrese valor 2");
-            valor2 = double.Parse(Console.ReadLine());
-            Console.WriteLine("Ingrese valor 3");
-            valor3 = double.Parse(Console.ReadLine());
-            do { }
-            while ();
-            Console.ReadLine();
-
-
-
-
+            char ingreso; 
+            do 
+            {
+                Console.WriteLine("Ingrese valor 1");
+                valor1 = double.Parse(Console.ReadLine());
+                Console.WriteLine("Ingrese valor 2");
+                valor2 = double.Parse(Console.ReadLine());
+                Console.WriteLine("Ingrese valor 3");
+                valor3 = double.Parse(Console.ReadLine());
+                
+                if (valor1 >= valor2 && valor1 >= valor3) 
+                {
+                    Console.WriteLine($"{valor1} es el mayor");
+                }
+                else
+                    if  (valor2 >= valor1 && valor2 >= valor3)
+                    {
+                        Console.WriteLine($"{valor2} es el mayor");
+                    }
+                    else 
+                    {
+                        Console.WriteLine($"{valor3} es el mayor");
+                    };
+                
+                Console.WriteLine("Desea ingresar datos?(S/N)");
+                ingreso = Console.ReadKey().KeyChar;
+            }
+            while (ingreso == 's');
             Console.ReadLine();
         }
     }
